@@ -1,7 +1,7 @@
 /* Teensyduino Core Library
  * http://www.pjrc.com/teensy/
  * Copyright (c) 2013 PJRC.COM, LLC.
- * Modified by Jacob Alexander (2013-2016)
+ * Modified by Jacob Alexander (2013-2015)
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -448,7 +448,7 @@ static uint8_t config_descriptor[CONFIG_DESC_SIZE] = {
 	1,                                      // bConfigurationValue
 	0,                                      // iConfiguration
 	0xA0,                                   // bmAttributes
-	250,                                    // bMaxPower - Entry Index 8
+	250,                                    // bMaxPower
 
 // --- Keyboard HID --- Boot Mode Keyboard Interface
 // - 9 bytes -
@@ -691,8 +691,6 @@ static uint8_t config_descriptor[CONFIG_DESC_SIZE] = {
 	SYS_CTRL_SIZE, 0,                       // wMaxPacketSize
 	SYS_CTRL_INTERVAL,                      // bInterval
 };
-
-uint8_t *usb_bMaxPower = &config_descriptor[8];
 
 
 

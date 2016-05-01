@@ -30,19 +30,19 @@
 // You can change these to give your code its own name.
 #define STR_MANUFACTURER        L"Kiibohd"
 #define STR_PRODUCT             L"Keyboard - MDErgo1-C2 PartialMap pjrcUSB full"
-#define STR_SERIAL              L"Clean c2-logo - 2016-03-22 19:51:43 -0700"
+#define STR_SERIAL              L"Dirty c2-logo - 2016-04-30 19:22:09 -0700"
 
 
 // Strings used in the CLI module
-#define CLI_Revision            "bfaed8f58ce8aaa307dee2c4500fee426170b8ed"
+#define CLI_Revision            "58e19c831b35dce37c685a2ea0ddc4e187953338"
 #define CLI_Branch              "c2-logo"
-#define CLI_ModifiedStatus      "Clean"
-#define CLI_ModifiedFiles       "\r\n\t"
-#define CLI_RepoOrigin          "https://github.com/kiibohd/controller.git"
-#define CLI_CommitDate          "2016-03-22 19:51:43 -0700"
-#define CLI_CommitAuthor        "Jacob Alexander <haata@kiibohd.com>"
+#define CLI_ModifiedStatus      "Dirty"
+#define CLI_ModifiedFiles       "\r\n\tKeyboards/ICED-L/buildvars.h\r\n\tOutput/pjrcUSB/arm/usb_desc.c\r\n\tOutput/pjrcUSB/arm/usb_desc.h\r\n\tOutput/pjrcUSB/arm/usb_dev.c\r\n\tOutput/pjrcUSB/arm/usb_dev.h\r\n\tOutput/pjrcUSB/output_com.c\r\n\tOutput/pjrcUSB/output_com.h\r\n\tOutput/usbMuxUart/output_com.c\r\n\tScan/ISSILed/led_scan.c\r\n\tScan/ISSILed/led_scan.h\r\n\tScan/KType/scan_loop.c\r\n\tScan/KType/scan_loop.h\r\n\tScan/MD1.1/scan_loop.c\r\n\tScan/MD1.1/scan_loop.h\r\n\tScan/MD1/scan_loop.c\r\n\tScan/MD1/scan_loop.h\r\n\tScan/MDErgo1-C2/scan_loop.c\r\n\tScan/MDErgo1-C2/scan_loop.h\r\n\tScan/MDErgo1/scan_loop.c\r\n\tScan/MDErgo1/scan_loop.h\r\n\tScan/MatrixARM/matrix_scan.c\r\n\tScan/MatrixARM/matrix_scan.h\r\n\tScan/STLcd/lcd_scan.c\r\n\tScan/STLcd/lcd_scan.h\r\n\tScan/UARTConnect/connect_scan.c\r\n\tScan/UARTConnect/connect_scan.h\r\n\tScan/WhiteFox/scan_loop.c\r\n\tScan/WhiteFox/scan_loop.h"
+#define CLI_RepoOrigin          "git@github.com:csquared/controller.git"
+#define CLI_CommitDate          "2016-04-30 19:22:09 -0700"
+#define CLI_CommitAuthor        "csquared <christopher.continanza@gmail.com>"
 #define CLI_Modules             "Scan(MDErgo1-C2) Macro(PartialMap) Output(pjrcUSB) Debug(full)"
-#define CLI_BuildDate           "2016-04-30 19:15:37 -0700"
+#define CLI_BuildDate           "2016-05-01 15:59:23 -0700"
 #define CLI_BuildOS             "Darwin-15.4.0"
 #define CLI_Arch                "arm"
 #define CLI_Chip                "mk20dx256vlh7"

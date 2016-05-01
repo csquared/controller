@@ -103,14 +103,3 @@ inline void Scan_finishedWithOutput( uint8_t sentKeys )
 }
 
 
-// Signal from the Output Module that the available current has changed
-// current - mA
-void Scan_currentChange( unsigned int current )
-{
-	// Indicate to all submodules current change
-	Connect_currentChange( current );
-	Matrix_currentChange( current );
-	LED_currentChange( current );
-	LCD_currentChange( current );
-}
-

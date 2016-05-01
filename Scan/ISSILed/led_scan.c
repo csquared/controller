@@ -1,4 +1,4 @@
-/* Copyright (C) 2014-2016 by Jacob Alexander
+/* Copyright (C) 2014-2015 by Jacob Alexander
  *
  * This file is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -406,14 +406,8 @@ inline void LED_setup()
 	// Set default brightness
 	LED_sendPage( (uint8_t*)LED_defaultBrightness1, sizeof( LED_defaultBrightness1 ), 0 );
 
-	// Do not disable software shutdown of ISSI chip unless current is high enough
-	// Require at least 150 mA
-	// May be enabled/disabled at a later time
-	if ( Output_current_available() >= 150 )
-	{
-		// Disable Software shutdown of ISSI chip
-		LED_writeReg( 0x0A, 0x01, 0x0B );
-	}
+	// Disable Software shutdown of ISSI chip
+	LED_writeReg( 0x0A, 0x01, 0x0B );
 }
 
 
@@ -671,8 +665,6 @@ void LED_currentChange( unsigned int current )
 	// Delay action till next LED scan loop (as this callback sometimes occurs during interrupt requests)
 	LED_currentEvent = current;
 }
-
-
 
 // ----- Capabilities -----
 
